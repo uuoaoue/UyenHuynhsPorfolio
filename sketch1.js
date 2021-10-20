@@ -171,7 +171,8 @@ function setUpPolaroid() {
   );
 }
 function setup() {
-  createCanvas(1000, 1000);
+  let renderer = createCanvas(1000, 1000);
+  renderer.parent("canvas-container");
 
   angleMode(DEGREES);
 

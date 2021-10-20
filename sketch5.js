@@ -60,10 +60,10 @@ function setup() {
 // create a button
   button = createButton("Explore!");
   button.position(width/2 -100, height/2+500);
-  button.size(200, 50);
+  button.size(200, 60);
   button.style("font-family", "IndieFlower-Regular");
   button.style("font-size", "30px");
-  button.style('background-color', "#bfc8db");
+  button.style('background-color', "#d16262");
 
 // if button is pressed
   button.mousePressed(buttonPressed);
