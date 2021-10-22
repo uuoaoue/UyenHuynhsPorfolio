@@ -11,12 +11,68 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   <link rel="stylesheet" href="./navbar_styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" href="./style.css" />
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <meta charset="utf-8" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    * {
+      box-sizing: border-box;
+    }
+    
+    .projects-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+    .card {
+      margin: 10px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      width: 400px;
+    }
+    .card-header img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      min-height: 150px;
+    }
 
+    .tag {
+      background: #cccccc;
+      border-radius: 50px;
+      font-size: 12px;
+      margin: 0;
+      color: #fff;
+      padding: 2px 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .tag-teal {
+      background-color: #47bcd4;
+    }
+    .tag-purple {
+      background-color: #5e76bf;
+    }
+    .tag-pink {
+      background-color: #cd5b9f;
+    }
 
+    .card-body p {
+      font-size: 13px;
+      margin: 0 0 40px;
+    }
+  </style>
 </head>
 
 <body>
@@ -41,34 +97,162 @@
     </div>
   </nav>
   <div class="main-wrapper">
-    <!-- First Container -->
-    <div class="container-fluid bg-1 text-center section">
-      <h3 class="margin">About me</h3>
-      <img src="assets/Logo.png" class="img-responsive" style="display:inline" alt="logo" width="350" height="350" />
-      <h3>My name is Uyen</h3>
-    </div>
-
-    <!-- Second Container -->
-    <div class="container-fluid bg-2 text-center section">
-      <h3 class="margin">My Works</h3>
-      <p>
-Click on the name of the project to see more details      </p>
-      <div class="grid-container">
-        <div class="grid-item"><a href="./Project1.html">The New Normal </a></div>
-        <div class="grid-item"><a href="./Project2.html">My Polaroid - Interactive project </a></div>
-        <div class="grid-item"><a href="./Project3.html">I'll quit Zoom </a></div>
-        <div class="grid-item"><a href="./Project4.html">Seven Deadly Sins</a></div>
-        <div class="grid-item"><a href="./Project5.html">What's for dinner?- Interactive project </a></div>
-        <div class="grid-item"><a href="./Project6.html">Michael Reeves </a></div>
-        <div class="grid-item"><a href="./Project7.html">Glitched Art </a></div>
-        <div class="grid-item"><a href="./Project8.html">Daisy-Interactive project </a></div>
-        <div class="grid-item"><a href="./Project9.html">wahoo</a></div>
-        <div class="grid-item"><a href="./Project10.html">My little World</a></div>
-        <div class="grid-item"><a href="./Project11.html">11</a></div>
-        <div class="grid-item"><a href="./Project12.html">Cyan is sus</a></div>
+    <div class="projects-container">
+      <div class="card">
+        <div class="card-header">
+          <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Technology</span>
+          <h3>
+            <a href="./Project1.html">The New Normal </a>
+          </h3>
+          <p>
+            An exploration into the truck's polarising design
+          </p>      
+        </div>
       </div>
-
-    </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Technology</span>
+          <h3>
+            <a href="./Project2.html">My Polaroid - Interactive project </a>
+          </h3>
+          <p>
+            An exploration into the truck's polarising design
+          </p>      
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Technology</span>
+          <h3>
+            <a href="./Project3.html">I'll quit Zoom </a>
+          </h3>
+          <p>
+            An exploration into the truck's polarising design
+          </p>      
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Technology</span>
+          <h3>
+            <a href="./Project4.html">Seven Deadly Sins</a>
+          </h3>
+          <p>
+            An exploration into the truck's polarising design
+          </p>      
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Technology</span>
+          <h3>
+            <a href="./Project5.html">What's for dinner?- Interactive project </a>
+           
+          </h3>
+          <p>
+            An exploration into the truck's polarising design
+          </p>      
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Technology</span>
+          <h3>
+            <a href="./Project6.html">Michael Reeves </a>
+          </h3>
+          <p>
+            An exploration into the truck's polarising design
+          </p>      
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Technology</span>
+          <h3>
+            <a href="./Project7.html">Glitched art </a>
+          </h3>
+          <p>
+            An exploration into the truck's polarising design
+          </p>      
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Technology</span>
+          <h3>
+            <a href="./Project8.html">Daisy-Interactive project </a>
+          </h3>
+          <p>
+            An exploration into the truck's polarising design
+          </p>      
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Technology</span>
+          <h3>
+            <a href="./Project9.html">wahoo</a>
+          </h3>
+          <p>
+            An exploration into the truck's polarising design
+          </p>      
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Technology</span>
+          <h3>
+            <a href="./Project10.html">My little World</a>
+          </h3>
+          <p>
+            An exploration into the truck's polarising design
+          </p>      
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <img src="https://c0.wallpaperflare.com/preview/483/210/436/car-green-4x4-jeep.jpg" alt="rover" />
+        </div>
+        <div class="card-body">
+          <span class="tag tag-teal">Technology</span>
+          <h3>
+            <a href="./Project12.html">Cyan is sus</a>
+          </h3>
+          <p>
+            An exploration into the truck's polarising design
+          </p>      
+        </div>
+      </div>     
   </div>
 
   <!-- Footer -->
