@@ -42,8 +42,9 @@ myFont = loadFont('assets/IndieFlower-Regular.ttf');
 }
 
 function setup() {
+  let renderer = createCanvas(1000, 1000);
+  renderer.parent("canvas-container");
 
-  createCanvas(1000, 1000);
 
   background(color(random(255, 205), random(205, 255), random(205, 205)));
   backgroundColor = color(random(255, 205), random(205, 255), random(205, 205));
