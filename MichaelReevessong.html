@@ -10,7 +10,38 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./navbar_styles.css" />
+  <style>    
+    .content-container {
+      display: flex;
+      flex-direction: row;
+      font: 20px Montserrat, sans-serif;
+      min-height: 100vh;
+    }
+    .video-container {
+      width: 55%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:lavender;
 
+    }
+    .project-description-container {
+      width:45%;
+      padding-left: 40px;
+      padding-top: 40px;
+      padding-right: 40px;
+      line-height: 2;
+      color: black;
+      background-color:lavender;
+    }
+    .video {
+      position: relative;      
+      width: 100%;
+      height: 100%;
+      padding-top:40px;
+      padding-bottom:10%;
+    }
+  </style>
 </head>
 
 <body>
@@ -35,15 +66,21 @@
     </div>
   </nav>
   <!-- Header -->
-  <div class="header bg main-wrapper container-fluid">
-    <h1>Michael Reeves theme song</h1>
-    <p>2021 <br>
+  <div class="content-container">
+    <div class="video-container">
+      <iframe class="video" src="https://www.youtube.com/embed/4-tUFdozptE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="project-description-container">
+      <div>
+          <h1>Michael Reeves theme song</h1>
+      </div>
+      <div>
+        <p>2021 <br>
 
-
-      Michael Reeves theme song is the animated project I did using LilyPichu and TJ Brown singing together. This project combines drawing on Procreate and editing animations in Adobe Premiere Pro.
-      The project is on Little Animation Corner youtube channel and receives more than 4k views in the first month.
-    </p>
-<iframe width="80%" height="90%" src="https://www.youtube.com/embed/4-tUFdozptE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
+          Michael Reeves theme song is the animated project I did using LilyPichu and TJ Brown singing together. This project combines drawing on Procreate and editing animations in Adobe Premiere Pro.
+          The project is on Little Animation Corner youtube channel and receives more than 4k views in the first month.
+        </p>
+      </div>
+    </div>
+  </div>     
 </body>
