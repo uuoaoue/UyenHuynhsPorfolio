@@ -8,41 +8,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./navbar_styles.css" />
 
-</head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="./index.html">Uyen Huynh</a>
+    body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #FFD3C8;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .bg {
+      background-color: #DCDCDC;
+      color: #000000;
+    }
+
+    .margin {
+      margin-bottom: 45px;
+    }
+
+    .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+    }
+
+    .navbar-nav li a:hover {
+      color: #1abc9c !important;
+    }
+
+    .main-wrapper {
+      height: 100%;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 6px;
+    }
+    /* Create four equal columns that sits next to each other */
+
+    .column {
+      -ms-flex: 33%;
+      /* IE10 */
+      flex: 33%;
+      max-width: 33%;
+      padding: 0 6px;
+      padding-left:14px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    /* Responsive layout - makes a two column-layout instead of four columns */
+
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">Uyen Huynh</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">WORK</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">WORK</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Header -->
-  <div class="header bg main-wrapper container-fluid">
-    <h1>Cyan is sus</h1>
-    <p>2020 <br>
-      wahoo is a short .gif project that I used Procreate to do. I decided to do a bouncing sequence of a ball so I drew the ball in Procreate first and them drew frame by frame the next movements of it.
-    </p>
-    <video width="50%" height="100%" controls>
-      <source src="assets/CyanIsSus.mp4" type="video/mp4">
-      <source src="assets/CyanIsSus.ogg" type="video/ogg">
-      Your browser does not support the video tag.
-    </video>
+    </nav>
+    <div class="main-wrapper">
+
+      <!-- Header -->
+      <div class="header bg">
+        <h1>Cyan is Sus</h1>
+        <p>2020
+
+        <br> "Cyan is Sus" is a project inspired by the game called "among us". This is one of the character of the game. I used Maya to render the character and made the animation in Maya as well. After that, I ultilized Premiere Pro to put sound effects in the video.
+        </p>
+
+</div>
+  <!-- Photo Grid -->
+<div class="row bg">
+  <div class="column">
+    <img src="assets/cyan1.png" style="width:100%">
+
+  </div>
+
+  <div class="column">
+    <img src="assets/cyan2.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="assets/cyan3.png" style="width:100%">
+  </div>
+</div>
+
+</div>
+<div class="header bg main-wrapper container-fluid">
+  <h3> Renders of the character </h3>
+  <h1>Final product</h1>
+
+  <video width="50%" height="100%" controls>
+    <source src="assets/cyanIsSus.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </body>
+</html>
