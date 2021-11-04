@@ -14,6 +14,8 @@ let size = 200;
 let runDistance = 800;
 let backgroundColor;
 let flowerColor;
+let canvasWidth=1000;
+let canvasHeight=1000;
 
 function preload() {
   // preload() runs once
@@ -171,7 +173,7 @@ function setUpPolaroid() {
   );
 }
 function setup() {
-  let renderer = createCanvas(1000, 1000);
+  let renderer = createCanvas(canvasWidth, canvasHeight);
   renderer.parent("canvas-container");
 
   angleMode(DEGREES);
@@ -225,6 +227,7 @@ function flower() {
   }
 }
 function mouseClicked() {
+  console.log(mouseX, mouseY);
   // if mouse is clicked within the polaroid frame, then set mouse is clicked to true
   if (
     mouseX > outerShapeXOrigin && // mouse is on the right of where the polaroid start
@@ -242,7 +245,8 @@ function mouseClicked() {
     myPolaroid7.setIsRunning(true);
     myPolaroid8.setIsRunning(true);
 
-  } else {
+  } else if (mouseX<=canvasWidth &&
+    mouseY <= canvasHeight){
     backgroundColor = color(
       random(255, 205),
       random(205, 255),
