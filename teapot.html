@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Uyen Huynh's Porfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./navbar_styles.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #FFD3C8;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .bg {
+      background-color: #DCDCDC;
+      color: #000000;
+    }
+
+    .margin {
+      margin-bottom: 45px;
+    }
+
+  
+    .main-wrapper {
+      height: 100%;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 6px;
+    }
+    /* Create four equal columns that sits next to each other */
+
+    .column {
+      -ms-flex: 33%;
+      /* IE10 */
+      flex: 33%;
+      max-width: 33%;
+      padding: 0 6px;
+      padding-left:14px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    /* Responsive layout - makes a two column-layout instead of four columns */
+
+    @media screen and (max-width: 800px) {
+      .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+    @media screen and (max-width: 600px) {
+      .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    p{
+      font-size: 18px;
+    }
+  </style>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">Uyen Huynh</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./index.html"> HOME</a></li>
+            <li><a href="./game.html"> GAME</a></li>
+            <li><a href="./video.html"> VIDEO</a></li>
+            <li><a href="./3d.html"> 3D</a></li>
+            <li><a href="./photography.html"> PHOTOGRAPHY</a></li>
+            <li><a href="./illustrations.html"> DIGITAL ILLUSTRATIONS</a></li>
+            <li><a href="./interactive.html"> INTERACTIVE</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- eng nav bar -->
+      <!-- Header -->
+      <div class="header bg">
+        <h1>The Teapot</h1>
+        <p>2021
+
+        <br> The Teapot porject bases on the origin story of The Utah teapot. The Utah teapot, or the Newell teapot, is a 3D test model that has become a standard reference object within the computer graphics community.The teapot model was created in 1975 by early computer graphics researcher Martin Newell, a member of the pioneering graphics program at the University of Utah.
+        This project consists of two part:<br>
+        Part 1: Create a basic teapot using the fundamentals of creating radial symmetry along profiles, rails and 2d extrusions (use revolve,loft and/or sweep).<br>
+        Part 2: Design a unique model based on a 2d handmade sketch using the same techniques of using (revolve,sweep,loft). 
+        </p>
+
+</div>
+  <!-- Photo Grid -->
+<div class="row bg">
+  <div class="column">
+    <img src="assets/mlw_1.png" style="width:100%">
+    <img src="assets/final1.png" style="width:100%">
+
+  </div>
+
+  <div class="column">
+    <img src="assets/mlw_2.png" style="width:100%">
+    <img src="assets/final2.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="assets/mlw_3.png" style="width:100%">
+    <img src="assets/final3.png" style="width:100%">
+  </div>
+</div>
+
+</div>
+<div class="header bg main-wrapper container-fluid">
+  <h1>Final product</h1>
+
+  <video controls>
+    <source src="assets/finalvideo.mp4" type="video/mp4">
+      <source src="assets/finalvideo.ogg" type="video/ogg">
+
+  Your browser does not support the video tag.
+  </video>
+</body>
+</html>
